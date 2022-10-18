@@ -10,32 +10,31 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="heading">APPSDEPLOYER</div>
+			<div class="heading">JOB SURVEY</div>
 			<form action="">
-				<div class="form">
+				<div class="form-top">
 					<span>
-						<label for="fname">First Name</label><br />
-						<input id="fname" type="text"
+						<input id="fname" type="text" placeholder="First Name" required
 					/></span>
 					<span>
-						<label for="lname">Last Name</label><br />
-						<input id="lname" type="text"
+						<input id="lname" type="text" placeholder="Last Name" required
 					/></span>
 					<span>
-						<label for="email">Email</label><br />
-						<input id="email" type="email"
+						<input id="email" type="email" placeholder="Email" required
 					/></span>
 					<span>
-						<label for="phnum"> Phone Number</label><br />
-						<input id="phnum" type="tel"
+						<input id="phnum" type="tel" placeholder="Phone Number" required
 					/></span>
+				</div>
+				<input id="address" type="text" placeholder="Address" required />
+				<div class="form-mid">
 					<span>
 						<label for="dob">Date of Birth</label><br />
-						<input id="dob" type="date"
+						<input id="dob" type="date" required
 					/></span>
 					<span>
 						<label for="occupation">Occupation</label><br />
-						<select name="occupation" id="occupation">
+						<select name="occupation" id="occupation" required>
 							<option value="doctor">Doctor</option>
 							<option value="engineer">Engineer</option>
 							<option value="lawyer">Lawyer</option>
@@ -44,10 +43,8 @@
 							<option value="unemployeed">Unemployeed</option>
 						</select>
 					</span>
-					<span>
-						<label for="address">Address</label><br />
-						<input id="address" type="text"
-					/></span>
+				</div>
+				<div class="form-bottom">
 					<span>
 						<p>Martial Status</p>
 						<label for="married">Married</label>
@@ -66,7 +63,15 @@
 						/>
 					</span>
 				</div>
-				<input type="submit" />
+				<span>
+					<textarea
+						required
+						placeholder="Tell us something about you.."
+						rows="5"
+						cols="47"
+					></textarea>
+				</span>
+				<input type="submit" id="submit-btn" />
 			</form>
 		</div>
 	</body>
