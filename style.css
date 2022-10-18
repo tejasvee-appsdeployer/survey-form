@@ -36,10 +36,6 @@ form {
 	row-gap: 1rem;
 }
 
-form > input {
-	width: 71.5%;
-}
-
 .form-top {
 	display: grid;
 	grid-template-columns: min-content min-content;
@@ -47,12 +43,20 @@ form > input {
 	grid-row-gap: 1rem;
 }
 
+.form-bottom {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
 .form-mid {
-	display: flex;
-	gap: 1rem;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 1rem;
+	margin: auto auto auto 70px;
 }
 
 #submit-btn {
 	background-color: orange;
 	padding: 15px;
+	width: 71.5%;
 }
