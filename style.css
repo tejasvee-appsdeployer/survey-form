@@ -21,6 +21,7 @@ form {
 form > input {
 	width: 71.5%;
 }
+
 .form {
 	display: grid;
 	grid-template-columns: min-content min-content;
