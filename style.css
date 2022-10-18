@@ -1,5 +1,12 @@
 .container {
-	background-color: red;
 	width: 500px;
 	height: 600px;
+	padding: auto;
+	margin: auto;
+	border: 1px solid black;
+}
+
+.heading {
+	text-align: center;
+	padding: 10px 10px 10px 10px;
 }
